@@ -4,8 +4,8 @@ in its most classic form:
   -- Iterate all the way through the sequence, from beginning to end.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Madison Robertson.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -79,6 +79,18 @@ def run_test_count_negatives():
     actual = count_negatives((8, 13, 7, -5))
     print()
     print('Test 5 expected:', expected)
+    print('       actual:  ', actual)
+
+    expected = 2
+    actual = count_negatives([10, 24, -2.5, -3])
+    print()
+    print('Test 6 expected:', expected)
+    print('       actual:  ', actual)
+
+    expected = 3
+    actual = count_negatives([12, -.001, -46, -1000])
+    print()
+    print('Test 7 expected:', expected)
     print('       actual:  ', actual)
 
     # TO DO 2 (continued):  Add your 2 ADDITIONAL tests here:
