@@ -242,7 +242,7 @@ def count_short_ones(seq_of_lists):
     # ------------------------------------------------------------------
     count = 0
     for k in range(len(seq_of_lists)):
-        if seq_of_lists[k] 
+        if seq_of_lists[k-1] > seq_of_lists[2]:
             count = count + 1
     return count
 
