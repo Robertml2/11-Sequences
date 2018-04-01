@@ -112,15 +112,20 @@ def count_negatives(seq):
       :type seq: (list | tuple) of (int | float)
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
+    count = 0
+    for k in range(len(seq)):
+        if seq[k] < 0:
+            count = count +1
+    return count
 
 
 def run_test_count_short_ones():
     """ Tests the   count_short_ones   function. """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement this TEST function.
+    # DONE: 4. Implement this TEST function.
     #   It TESTS the  count_short_ones  function defined below.
     #   Include at least ** 2 ** ADDITIONAL tests beyond those we wrote.
     #
@@ -186,14 +191,29 @@ def run_test_count_short_ones():
     print('       actual:  ', actual)
 
     # Test 7:
+
     expected = 0
     seq = [[1, 1, 1], [1, 1, 1], [1, 1, 1], [1, 1, 1]]
+    actual = count_short_ones(seq)
+    print()
+    print('Test 8 expected:', expected)
+    print('       actual:  ', actual)
+
+    # TO DO 4 (continued):  Add your 2 ADDITIONAL test(s) here:
+
+    expected = 2
+    seq = [[2, 4, 0], [3, .5], [4, 2, 1], [1]]
     actual = count_short_ones(seq)
     print()
     print('Test 7 expected:', expected)
     print('       actual:  ', actual)
 
-    # TO DO 4 (continued):  Add your 2 ADDITIONAL test(s) here:
+    expected = 1
+    seq = [[7, 3], [1, 6, 10]]
+    actual = count_short_ones(seq)
+    print()
+    print('Test 9 expected:', expected)
+    print('       actual:  ', actual)
 
 
 def count_short_ones(seq_of_lists):
@@ -220,6 +240,11 @@ def count_short_ones(seq_of_lists):
     # TODO: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
+    count = 0
+    for k in range(len(seq_of_lists)):
+        if seq_of_lists[k] 
+            count = count + 1
+    return count
 
 
 def run_test_draw_circles():
