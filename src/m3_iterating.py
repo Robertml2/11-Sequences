@@ -13,7 +13,7 @@ import rosegraphics as rg
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_count_negatives()
-    #run_test_count_short_ones()
+    run_test_count_short_ones()
     run_test_draw_circles()
 
 
@@ -237,12 +237,12 @@ def count_short_ones(seq_of_lists):
       :type seq_of_lists: (list | tuple) of (list | tuple | str)
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
     count = 0
     for k in range(len(seq_of_lists)):
-        if seq_of_lists[k-1] > seq_of_lists[2]:
+        if len(seq_of_lists[k]) < 3:
             count = count + 1
     return count
 
@@ -327,7 +327,7 @@ def draw_circles(window, points, radius, color):
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
 
-    for k in range(len(points)):
+    for k in range(points):
         circle = rg.Circle(points[k], radius)
         circle.fill_color = color[k]
         circle.attach_to(window)
