@@ -669,7 +669,7 @@ def sum_first_n(numbers, n):
     #         as an ORACLE in TESTING this function, however.
     # ------------------------------------------------------------------
     total = 0
-    for k in range(len(numbers), n):
+    for k in range(len(numbers)-n, len(numbers)):
         total = total + numbers[k]
     return total
 
