@@ -507,8 +507,8 @@ def print_items_that_are_strings(sequence):
     #        Note that   str   has NO quotes surrounding it.
     # ------------------------------------------------------------------
     for k in range(len(sequence)):
-        if k == sequence(''):
-            print (sequence[k])
+        if (sequence[k]) == str(k):
+            print(len(sequence[k]))
 
 
 # ----------------------------------------------------------------------
@@ -535,7 +535,7 @@ def print_items_that_are_odd_integers(sequence):
     # ------------------------------------------------------------------
 
     for k in range(len(sequence)):
-        if (sequence[k])% 2 == 0:
+        if (sequence[k]) % 2 == 0:
             print(sequence[k])
 
 # ----------------------------------------------------------------------
