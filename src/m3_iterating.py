@@ -326,11 +326,18 @@ def draw_circles(window, points, radius, color):
     # TODO: 6. Implement and test this function.
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
+    center = points
 
-    for k in range(points):
-        circle = rg.Circle(points[k], radius)
-        circle.fill_color = color[k]
+    for k in range(len(center)):
+        circle = rg.Circle(center, radius)
+        circle.center([k])
         circle.attach_to(window)
+        window.render()
+
+
+
+
+
 
 
 
