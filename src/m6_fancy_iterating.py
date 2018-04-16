@@ -409,7 +409,7 @@ def print_items_at_odd_indices(sequence):
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
     for k in range(1, len(sequence), 2):
-        print(k)
+        print(sequence[k], "is at index", k)
 
 
 
@@ -470,7 +470,7 @@ def print_items_that_are_bigger_than_5(sequence):
 
     for k in range(len(sequence)):
         if (sequence[k]) > 5:
-            print(sequence[k])#, "is at index", sequence.index(k)
+            print(sequence[k],"is at index", k)
 
 
 
@@ -508,7 +508,7 @@ def print_items_that_are_strings(sequence):
     # ------------------------------------------------------------------
     for k in range(len(sequence)):
         if type(sequence[k]) == str:
-            print((sequence[k]))
+            print((sequence[k]), "is at index", k)
 
 
 # ----------------------------------------------------------------------
@@ -536,7 +536,7 @@ def print_items_that_are_odd_integers(sequence):
 
     for k in range(len(sequence)):
         if (type(sequence[k]) == int) and sequence[k] % 2 == 1:
-            print(sequence[k])
+            print(sequence[k], "is at index", k)
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
